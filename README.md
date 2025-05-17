@@ -17,18 +17,6 @@ I fed the Alice in Wonderland story in the form of a markdown file and hardcoded
 ![image](https://github.com/user-attachments/assets/320858a3-2291-47fe-bcea-cb25628cc7a5)
 
 
-## 📁 Project Structure
-RAG/
-─ chroma/ # Auto-generated vector store
-─ data/books/ # Folder for markdown files (your data)
-├── create_database.py # Script to generate and store vector embeddings
-├── query_data.py # Script to query vector DB and get answers via LLM
-├── .env # Contains your OpenRouter API key
-├── .gitignore
-└── README.md
-
-
----
 
 ## ✅ Setup Instructions
 
@@ -39,10 +27,9 @@ pip install langchain langchain-community chromadb huggingface-hub requests pyth
 ```
 
 ### 2. Add your markdown files
-data/books/
-├── alice-in-wonderland.md
+data/books/alice-in-wonderland.md
 
-### 3. Set your API key
+### 3. .env (Setup your API key)
 ```bash
 API_KEY=your-openrouter-api-key
-'''
+
