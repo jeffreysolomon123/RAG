@@ -11,7 +11,8 @@ It uses:
 
 ---
 
-## 📁 Project Structure
+# Result : 
+(I fed the Alice in Wonderland story in the form of a markdown file) and hardcoded a "Who is Alice?" question to test the RAG. This was the response I got using the 'qwen/qwen3-0.6b-04-28:free' from OpenRouter.
 ![image](https://github.com/user-attachments/assets/320858a3-2291-47fe-bcea-cb25628cc7a5)
 
 
