@@ -18,7 +18,7 @@ I fed the Alice in Wonderland story in the form of a markdown file and hardcoded
 
 
 
-## ✅ Setup Instructions
+##  Setup Instructions
 
 ### 1. Install dependencies
 
@@ -32,4 +32,25 @@ data/books/alice-in-wonderland.md
 ### 3. .env (Setup your API key)
 ```bash
 API_KEY=your-openrouter-api-key
+```
+##  Usage
+
+### 1. Generate the database
+
+This script loads your markdown files, splits them into chunks, embeds them, and stores them in ChromaDB.
+
+```bash
+python create_database.py
+```
+
+### 2. Query the documents
+
+This script performs similarity search and asks the OpenRouter model a question based on retrieved context
+
+```bash
+python query_data.py
+```
+
+You can edit the `query_text` variable inside `query_data.py` to change the question.
+
 
